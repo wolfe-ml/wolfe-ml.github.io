@@ -22,15 +22,17 @@ title: Wolfe ML
 email: nathanrwolfe@gmail.com
 description: >- 
   Nathan discusses some machine learning and AI stuff
-baseurl: /wolfe-ml.github.io/
+baseurl: ""
+domain: wolfe-ml.github.io
 url: "https://wolfe-ml.github.io"
 # twitter_username: jekyllrb
 github_username:  wolfe-ml
 
 # Build settings
-theme: jekyll-theme-minimal
+theme: minima
 plugins:
   - jekyll-feed
+permalink: /:year/:title:output_ext
 
 # Exclude from processing.
 # The following items will not be processed, by default.
