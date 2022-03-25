@@ -5,19 +5,18 @@ date:   2022-03-14 22:27:23 -0400
 categories: jekyll update
 ---
 
-# Fix Your Dataset With Cartography! [DRAFT]
+# [DRAFT]
 
-One of my favorite recent papers is [Dataset Cartography: Mapping and Diagnosing Datasets with Training Dynamics](https://arxiv.org/pdf/2009.10795v2.pdf)
+One of my favorite recent papers, [Dataset Cartography: Mapping and Diagnosing Datasets with Training Dynamics](https://arxiv.org/pdf/2009.10795v2.pdf), introduces the ideas of dataset cartography and training dynamics. Dataset cartography, like its name suggests, is the art of mapping the data used to train your deep learning model, whereas training dynamics is the process of concisely generating data maps during the model training process rather than through a potentially costly evaluation step.
 
-
-## What is dataset cartography?
+## Dataset Cartography? Data Maps?
 Datesets used to train deep learning models have been growing larger and more complex. Have you ever been examining your deep learning ground truth training data and found something that seemed out of place? 
-For example, say youre trying to classify your companies app reviews into different sentiments `positive`, `neutral`, and `negative`. 
-While examining model errors after an initial pass at model training, you found this sample impropperly classified in your validation dataset:
+For example, say you're trying to classify your companies app reviews into different sentiments `positive`, `neutral`, and `negative`. 
+While examining model errors after an initial pass at model training, you found this sample improperly classified in your validation dataset:
 
 `"I really love this app...not" -> GT: sentiment_positive, Model: sentiment_negative`
 
-The sentiment of this utterance is labeled as positive, despite having some hardore sarcasm. It might be better for our models if this was labeled as `sentiment_negative`.
+The sentiment of this utterance is labeled as positive, despite having some hardcore sarcasm. It might be better for our models if this was labeled as `sentiment_negative`.
 While generating large ground truth training datasets some samples can occasionally get overlooked, and can cause potential biases and confusions in the resulting trained models.
 
 What about this example?
@@ -26,13 +25,11 @@ What about this example?
 
 This looks like a mixed review and may prompt the addition of a new class for our dataset
 
-Dataset cartography, like its name suggests, is the art of mapping the data used to train your deep learning model.
-
 ## What is a datamap?
 
-A datamap displays a distribution of the easy to learn, hard to learn, or ambiguous samples in the data.
+A data-map displays a distribution of the easy to learn, hard to learn, or ambiguous samples in the data.
 
-## How to map your dataset
+## Training Dynamics?
 
 
 ## Sources: 
